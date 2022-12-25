@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- swiperJS css -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- FONTS
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" /> -->
+
+    <!-- BT ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>Car rental</title>
+  </head>
+
+  <body>
+    <!--======================= HEADER START =======================-->
+
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <a href="#"><img src="./img/Logo.svg" alt="Logo" /></a>
+          <ul class="nav__ul">
+            <li class="nav__ul--list">
+              <a href="#" class="nav__ul--list-link">Categories</a>
+            </li>
+            <li class="nav__ul--list">
+              <a href="#" class="nav__ul--list-link"
+                >About Us <i class="psicons bi bi-chevron-down"></i
+              ></a>
+              <ul class="drap">
+                <li class="drap__list">
+                  <a href="#" class="drap__list_link">News</a>
+                </li>
+                <li class="drap__list">
+                  <a href="#" class="drap__list_link">Careers</a>
+                </li>
+                <li class="drap__list">
+                  <a href="#" class="drap__list_link">Lacation</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__ul--listt">
+              <a href="#" class="nav__ul--list-link"
+                >Help center <i class="psicons bi bi-chevron-down"></i
+              ></a>
+              <ul class="drap">
+                <li class="drap__list" >
+                  <a href="#" class="drap__list_link">News</a>
+                </li>
+                <li class="drap__list">
+                  <a href="#" class="drap__list_link">Careers</a>
+                </li>
+                <li class="drap__list">
+                  <a href="#" class="drap__list_link">Lacation</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <a href="tel: +18554200000" class="nav__link"> +1 855 420 0000 </a>
+
+          <button class="nav__dark">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.99998 0.208252C3.69676 0.208252 0.208313 3.6967 0.208313 7.99992C0.208313 12.3031 3.69676 15.7916 7.99998 15.7916C12.0495 15.7916 15.377 12.7027 15.7558 8.75226C15.7734 8.56841 15.6789 8.39193 15.5162 8.30463C15.3534 8.21732 15.1541 8.23624 15.0107 8.35262C14.2227 8.99207 13.2192 9.37492 12.125 9.37492C9.59367 9.37492 7.54165 7.32289 7.54165 4.79159C7.54165 3.28816 8.26504 1.9538 9.38468 1.11728C9.53272 1.00667 9.59986 0.817986 9.55496 0.63873C9.51005 0.459475 9.36189 0.324721 9.17919 0.296971C8.79438 0.238522 8.40057 0.208252 7.99998 0.208252Z"
+                fill=" #555555"
+              />
+            </svg>
+          </button>
+
+          <button id="login" class="nav__login">
+            Login
+            <img class="login_oq" src="./img/Login.svg" alt="login" />
+            <img class="login_qora" src="./img/Login.png" alt="login" />
+          </button>
+          <span class="nav__span"><i class="bi bi-list"></i></span>
+          <!-- ---------------- CARD --------------- -->
+
+          <div id="card" class="nav__card">
+            <div class="nav__card_div">
+              <a href="#"><img src="./img/Logo.svg" alt="Logo" /></a>
+              <button id="card_x" class="nav__card_div--btn">x</button>
+            </div>
+
+            <ul class="nav__card_ul">
+              <li class="nav__card_ul--list">
+                <a href="#" class="nav__card_ul--list-link">Categories</a>
+              </li>
+              <li class="nav__card_ul--list">
+                <a href="#" class="nav__card_ul--list-link">About Us</a>
+                <ul class="uls">
+                  <li class="uls__list">
+                    <a href="#" class="uls__list_link">News</a>
+                  </li>
+                  <li class="uls__list">
+                    <a href="#" class="uls__list_link">Careers</a>
+                  </li>
+                  <li class="uls__list">
+                    <a href="#" class="uls__list_link">Lacation</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav__card_ul--list">
+                <a href="#" class="nav__card_ul--list-link">Help center</a>
+                <ul class="uls">
+                  <li class="uls__list">
+                    <a href="#" class="uls__list_link">News</a>
+                  </li>
+                  <li class="uls__list">
+                    <a href="#" class="uls__list_link">Careers</a>
+                  </li>
+                  <li class="uls__list">
+                    <a href="#" class="uls__list_link">Lacation</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="nav_wrap">
+              <a href="tel: +18554200000" class="dis nav__link">
+                +1 855 420 0000
+              </a>
+
+              <button class="dis nav__dark">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.99998 0.208252C3.69676 0.208252 0.208313 3.6967 0.208313 7.99992C0.208313 12.3031 3.69676 15.7916 7.99998 15.7916C12.0495 15.7916 15.377 12.7027 15.7558 8.75226C15.7734 8.56841 15.6789 8.39193 15.5162 8.30463C15.3534 8.21732 15.1541 8.23624 15.0107 8.35262C14.2227 8.99207 13.2192 9.37492 12.125 9.37492C9.59367 9.37492 7.54165 7.32289 7.54165 4.79159C7.54165 3.28816 8.26504 1.9538 9.38468 1.11728C9.53272 1.00667 9.59986 0.817986 9.55496 0.63873C9.51005 0.459475 9.36189 0.324721 9.17919 0.296971C8.79438 0.238522 8.40057 0.208252 7.99998 0.208252Z"
+                    fill=" #555555"
+                  />
+                </svg>
+              </button>
+
+              <button id="loginn" class="dis nav__login">
+                <span>Login</span>
+                <img class="login_oq" src="./img/Login.svg" alt="login" />
+                <img class="login_qora" src="./img/Login.png" alt="login" />
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!--======================= HEADER END =======================-->
+
+    <!-- -----------------------MODAL START ------------------------ -->
+    <div class="modal">
+      <div class="container">
+        <div class="reg_wrapper">
+          <button id="login_x" class="nav__card_div--btn">x</button>
+          <h1 class="reg__title">Login</h1>
+          <form
+            class="form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+            id="registration"
+          >
+            <input
+              id="username"
+              class="input"
+              type="text"
+              name="email"
+              placeholder="Email"
+              required
+            />
+            <label class="label_koz" for="password">
+              <input
+                id="password"
+                class="input"
+                type="password"
+                name="password"
+                required
+                placeholder="Passord"
+              />
+              <span class="koz d-none"><i class="bi bi-eye-slash"></i></span>
+            </label>
+
+            <p class="regs_text">I want to create an account</p>
+
+            <button class="reg_btm">
+              Login
+              <img class="login_oq" src="./img/Login.svg" alt="login" />
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="overlay"></div>
+
+    <!-- -----------------------MODAL END ------------------------ -->
+    <!--======================= MAIN START =======================-->
+
+    <main>
+      <section>
+
+        <div class="container">
+         <div class="swiper mySwiper">
+           <div class="swiper-wrapper">
+             <div class="swiper-slide">
+               <img class="swiper-slide-carImg" src="./img/firstCar.png" alt="firstCar">
+             </div>
+             <div class="swiper-slide">
+               <img class="swiper-slide-carImg" src="./img/secondCar.png" alt="secondCar">
+             </div>
+             <div class="swiper-slide">
+               <img class="swiper-slide-carImg" src="./img/thirdCar.png" alt="thirdCar">
+             </div>
+           </div>
+           <div class="swiper-button-next"></div>
+           <div class="swiper-button-prev"></div>
+         </div>
+   
+       </div>
+   
+     </section>
+
+      <section class="carRENT">
+        <div class="container">
+          <div class="rent">
+            <h2 class="rent-title">Choose the car of your dreams</h2>
+            <p class="rent-text">
+              We provide our customers with the most incredible driving
+              emotions. That is why there are only world-class cars in our fleet
+            </p>
+
+            <div class="rent__btns">
+              <button class="rent__btns-btn" id="compact">Compact</button>
+              <button class="rent__btns-btn" id="sport">Sports cars</button>
+              <button class="rent__btns-btn" id="vans">Vans</button>
+            </div>
+
+            <!-- ========== COMPACT CARS star ============ -->
+            <ul class="rent__lists" id="first">
+              <li class="rent__lists--item">
+                <h3 class="rent__lists--item-title">Ford Fiesta</h3>
+                <p class="rent__lists--item-text">Economy Car</p>
+                <img
+                  src="./img/car1.png"
+                  alt="carImg"
+                  class="rent__lists--item-img"
+                />
+                <div class="rent__lists--item--iconsUP">
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/contact1.svg"
+                      alt="contact1"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">5 Seats</p>
+                  </div>
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/automatic.svg"
+                      alt="automatic"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      Automatic
+                    </p>
+                  </div>
+                </div>
+                <div class="rent__lists--item--iconsUP">
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/yContact.svg"
+                      alt="yContact"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      21+ Years
+                    </p>
+                  </div>
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/litr.svg"
+                      alt="litr"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      1-lit / 2.5 km
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="rent__lists--item">
+                <h3 class="rent__lists--item-title">Nissan Versa</h3>
+                <p class="rent__lists--item-text">Compact Car</p>
+                <img
+                  src="./img/car2.png"
+                  alt="carImg"
+                  class="rent__lists--item-img"
+                />
+                <div class="rent__lists--item--iconsUP">
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/contact1.svg"
+                      alt="contact1"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">5 Seats</p>
+                  </div>
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/automatic.svg"
+                      alt="automatic"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      Automatic
+                    </p>
+                  </div>
+                </div>
+                <div class="rent__lists--item--iconsUP">
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/yContact.svg"
+                      alt="yContact"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      21+ Years
+                    </p>
+                  </div>
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/litr.svg"
+                      alt="litr"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      1-lit / 2.5 km
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="rent__lists--item">
+                <h3 class="rent__lists--item-title">Toyota Corolla</h3>
+                <p class="rent__lists--item-text">Mid-size Car</p>
+                <img
+                  src="./img/car3.png"
+                  alt="carImg"
+                  class="rent__lists--item-img"
+                />
+                <div class="rent__lists--item--iconsUP">
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/contact1.svg"
+                      alt="contact1"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">5 Seats</p>
+                  </div>
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/automatic.svg"
+                      alt="automatic"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      Automatic
+                    </p>
+                  </div>
+                </div>
+                <div class="rent__lists--item--iconsUP">
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/yContact.svg"
+                      alt="yContact"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      21+ Years
+                    </p>
+                  </div>
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/litr.svg"
+                      alt="litr"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      1-lit / 2.5 km
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="rent__lists--item">
+                <h3 class="rent__lists--item-title">Nissan Rogue</h3>
+                <p class="rent__lists--item-text">Mid-size Car</p>
+                <img
+                  src="./img/car4.png"
+                  alt="carImg"
+                  class="rent__lists--item-img"
+                />
+                <div class="rent__lists--item--iconsUP">
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/contact1.svg"
+                      alt="contact1"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">5 Seats</p>
+                  </div>
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/automatic.svg"
+                      alt="automatic"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      Automatic
+                    </p>
+                  </div>
+                </div>
+                <div class="rent__lists--item--iconsUP">
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/yContact.svg"
+                      alt="yContact"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      21+ Years
+                    </p>
+                  </div>
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/litr.svg"
+                      alt="litr"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      1-lit / 2.5 km
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="rent__lists--item">
+                <h3 class="rent__lists--item-title">Chevy Traverse</h3>
+                <p class="rent__lists--item-text">Full-size SUV</p>
+                <img
+                  src="./img/car5.png"
+                  alt="carImg"
+                  class="rent__lists--item-img"
+                />
+                <div class="rent__lists--item--iconsUP">
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/contact1.svg"
+                      alt="contact1"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">5 Seats</p>
+                  </div>
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/automatic.svg"
+                      alt="automatic"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      Automatic
+                    </p>
+                  </div>
+                </div>
+                <div class="rent__lists--item--iconsUP">
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/yContact.svg"
+                      alt="yContact"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      21+ Years
+                    </p>
+                  </div>
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/litr.svg"
+                      alt="litr"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      1-lit / 2.5 km
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="rent__lists--item">
+                <h3 class="rent__lists--item-title">Nissan Altima</h3>
+                <p class="rent__lists--item-text">Full-size Car</p>
+                <img
+                  src="./img/car6.png"
+                  alt="carImg"
+                  class="rent__lists--item-img"
+                />
+                <div class="rent__lists--item--iconsUP">
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/contact1.svg"
+                      alt="contact1"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">5 Seats</p>
+                  </div>
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/automatic.svg"
+                      alt="automatic"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      Automatic
+                    </p>
+                  </div>
+                </div>
+                <div class="rent__lists--item--iconsUP">
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/yContact.svg"
+                      alt="yContact"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      21+ Years
+                    </p>
+                  </div>
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/litr.svg"
+                      alt="litr"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      1-lit / 2.5 km
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <!-- ========== COMPACT CARS end ============ -->
+
+            <!-- ============== SPORT CARS start ================ -->
+            <ul class="rent__lists" style="display: none" id="second">
+              <li class="rent__lists--item">
+                <h3 class="rent__lists--item-title">Royce rolls ghost</h3>
+                <p class="rent__lists--item-text">Full-size Car</p>
+                <img
+                  src="./img/car7.png"
+                  alt="carImg"
+                  class="rent__lists--item-img"
+                />
+                <div class="rent__lists--item--iconsUP">
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/contact1.svg"
+                      alt="contact1"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">5 Seats</p>
+                  </div>
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/automatic.svg"
+                      alt="automatic"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      Automatic
+                    </p>
+                  </div>
+                </div>
+                <div class="rent__lists--item--iconsUP">
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/yContact.svg"
+                      alt="yContact"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      21+ Years
+                    </p>
+                  </div>
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/litr.svg"
+                      alt="litr"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      1-lit / 2.5 km
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="rent__lists--item">
+                <h3 class="rent__lists--item-title">Mercedes s class</h3>
+                <p class="rent__lists--item-text">Full-size Car</p>
+                <img
+                  src="./img/car8.png"
+                  alt="carImg"
+                  class="rent__lists--item-img"
+                />
+                <div class="rent__lists--item--iconsUP">
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/contact1.svg"
+                      alt="contact1"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">5 Seats</p>
+                  </div>
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/automatic.svg"
+                      alt="automatic"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      Automatic
+                    </p>
+                  </div>
+                </div>
+                <div class="rent__lists--item--iconsUP">
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/yContact.svg"
+                      alt="yContact"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      21+ Years
+                    </p>
+                  </div>
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/litr.svg"
+                      alt="litr"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      1-lit / 2.5 km
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="rent__lists--item">
+                <h3 class="rent__lists--item-title">Lamborghini urus</h3>
+                <p class="rent__lists--item-text">Mid-size Car</p>
+                <img
+                  src="./img/car9.png"
+                  alt="carImg"
+                  class="rent__lists--item-img"
+                />
+                <div class="rent__lists--item--iconsUP">
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/contact1.svg"
+                      alt="contact1"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">5 Seats</p>
+                  </div>
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/automatic.svg"
+                      alt="automatic"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      Automatic
+                    </p>
+                  </div>
+                </div>
+                <div class="rent__lists--item--iconsUP">
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/yContact.svg"
+                      alt="yContact"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      21+ Years
+                    </p>
+                  </div>
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/litr.svg"
+                      alt="litr"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      1-lit / 2.5 km
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="rent__lists--item">
+                <h3 class="rent__lists--item-title">Mercedes g63 amg</h3>
+                <p class="rent__lists--item-text">Mid-size SUV</p>
+                <img
+                  src="./img/car10.png"
+                  alt="carImg"
+                  class="rent__lists--item-img"
+                />
+                <div class="rent__lists--item--iconsUP">
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/contact1.svg"
+                      alt="contact1"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">5 Seats</p>
+                  </div>
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/automatic.svg"
+                      alt="automatic"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      Automatic
+                    </p>
+                  </div>
+                </div>
+                <div class="rent__lists--item--iconsUP">
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/yContact.svg"
+                      alt="yContact"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      21+ Years
+                    </p>
+                  </div>
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/litr.svg"
+                      alt="litr"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      1-lit / 2.5 km
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <!-- ============== SPORT CARS end ================ -->
+
+            <!-- ========== VANS CARS star ============ -->
+            <ul class="rent__lists" style="display: none" id="third">
+              <li class="rent__lists--item">
+                <h3 class="rent__lists--item-title">
+                  15-Passenger Ford Transit
+                </h3>
+                <p class="rent__lists--item-text">Full-size Car</p>
+                <img
+                  src="./img/car11.png"
+                  alt="carImg"
+                  class="rent__lists--item-img"
+                />
+                <div class="rent__lists--item--iconsUP">
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/contact1.svg"
+                      alt="contact1"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">5 Seats</p>
+                  </div>
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/automatic.svg"
+                      alt="automatic"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      Automatic
+                    </p>
+                  </div>
+                </div>
+                <div class="rent__lists--item--iconsUP">
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/yContact.svg"
+                      alt="yContact"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      21+ Years
+                    </p>
+                  </div>
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/litr.svg"
+                      alt="litr"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      1-lit / 2.5 km
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="rent__lists--item">
+                <h3 class="rent__lists--item-title">Chrysler Pacifica</h3>
+                <p class="rent__lists--item-text">Full-size Car</p>
+                <img
+                  src="./img/car12.png"
+                  alt="carImg"
+                  class="rent__lists--item-img"
+                />
+                <div class="rent__lists--item--iconsUP">
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/contact1.svg"
+                      alt="contact1"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">5 Seats</p>
+                  </div>
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/automatic.svg"
+                      alt="automatic"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      Automatic
+                    </p>
+                  </div>
+                </div>
+                <div class="rent__lists--item--iconsUP">
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/yContact.svg"
+                      alt="yContact"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      21+ Years
+                    </p>
+                  </div>
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/litr.svg"
+                      alt="litr"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      1-lit / 2.5 km
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="rent__lists--item">
+                <h3 class="rent__lists--item-title">Chevy Silverado 4500HD</h3>
+                <p class="rent__lists--item-text">Mid-size Car</p>
+                <img
+                  src="./img/car13.png"
+                  alt="carImg"
+                  class="rent__lists--item-img"
+                />
+                <div class="rent__lists--item--iconsUP">
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/contact1.svg"
+                      alt="contact1"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">5 Seats</p>
+                  </div>
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/automatic.svg"
+                      alt="automatic"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      Automatic
+                    </p>
+                  </div>
+                </div>
+                <div class="rent__lists--item--iconsUP">
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/yContact.svg"
+                      alt="yContact"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      21+ Years
+                    </p>
+                  </div>
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/litr.svg"
+                      alt="litr"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      1-lit / 2.5 km
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="rent__lists--item">
+                <h3 class="rent__lists--item-title">
+                  12-Passenger Ford Transit
+                </h3>
+                <p class="rent__lists--item-text">Mid-size SUV</p>
+                <img
+                  src="./img/car14.png"
+                  alt="carImg"
+                  class="rent__lists--item-img"
+                />
+                <div class="rent__lists--item--iconsUP">
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/contact1.svg"
+                      alt="contact1"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">5 Seats</p>
+                  </div>
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/automatic.svg"
+                      alt="automatic"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      Automatic
+                    </p>
+                  </div>
+                </div>
+                <div class="rent__lists--item--iconsUP">
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/yContact.svg"
+                      alt="yContact"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      21+ Years
+                    </p>
+                  </div>
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/litr.svg"
+                      alt="litr"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      1-lit / 2.5 km
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="rent__lists--item">
+                <h3 class="rent__lists--item-title">
+                  15-Passenger Ford Transit
+                </h3>
+                <p class="rent__lists--item-text">Mid-size SUV</p>
+                <img
+                  src="./img/car15.png"
+                  alt="carImg"
+                  class="rent__lists--item-img"
+                />
+                <div class="rent__lists--item--iconsUP">
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/contact1.svg"
+                      alt="contact1"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">5 Seats</p>
+                  </div>
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/automatic.svg"
+                      alt="automatic"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      Automatic
+                    </p>
+                  </div>
+                </div>
+                <div class="rent__lists--item--iconsUP">
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/yContact.svg"
+                      alt="yContact"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      21+ Years
+                    </p>
+                  </div>
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/litr.svg"
+                      alt="litr"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      1-lit / 2.5 km
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="rent__lists--item">
+                <h3 class="rent__lists--item-title">Mercedes-Benz Sprinter</h3>
+                <p class="rent__lists--item-text">Mid-size SUV</p>
+                <img
+                  src="./img/car16.png"
+                  alt="carImg"
+                  class="rent__lists--item-img"
+                />
+                <div class="rent__lists--item--iconsUP">
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/contact1.svg"
+                      alt="contact1"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">5 Seats</p>
+                  </div>
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/automatic.svg"
+                      alt="automatic"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      Automatic
+                    </p>
+                  </div>
+                </div>
+                <div class="rent__lists--item--iconsUP">
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/yContact.svg"
+                      alt="yContact"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      21+ Years
+                    </p>
+                  </div>
+                  <div class="rent__lists--item--iconsUP--pack">
+                    <img
+                      class="rent__lists--item--iconsUP--pack-img"
+                      src="./img/litr.svg"
+                      alt="litr"
+                    />
+                    <p class="rent__lists--item--iconsUP--pack-text">
+                      1-lit / 2.5 km
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <!-- ========== VANS CARS end ============ -->
+            <div class="rent__down">
+              <button class="rent__down-btn">View all cars</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="img">
+        <div class="container">
+          <p class="img__text">More than 50 brands of cars</p>
+          <div class="img__wrap"><img src="./img/Brands.png" alt="" /></div>
+        </div>
+      </section>
+
+      <section class="book">
+        <div class="container">
+          <h2 class="book__title">Unparalleled service</h2>
+
+          <p class="book__text">
+            Whether you are looking for Newark Airport car rental, an insurance
+            replacement vehicle or minivan to take on vacation Car rental has it
+            all.
+          </p>
+
+          <div class="book__card">
+            <div class="book__card_wrap">
+              <div class="book__card_wrap--card">
+                <h4 class="book__card_wrap--card-title">
+                  Book online, pay online
+                </h4>
+                <img src="./img/tv.svg" alt="tv" />
+              </div>
+              <p class="book__card_wrap--text">
+                Complete the booking process A-Z, with our easy online system
+              </p>
+            </div>
+            <div class="book__card_wrap">
+              <div class="book__card_wrap--card">
+                <h4 class="book__card_wrap--card-title">
+                  Book online, pay online
+                </h4>
+                <img src="./img/tv.svg" alt="tv" />
+              </div>
+              <p class="book__card_wrap--text">
+                Complete the booking process A-Z, with our easy online system
+              </p>
+            </div>
+            <div class="book__card_wrap">
+              <div class="book__card_wrap--card">
+                <h4 class="book__card_wrap--card-title">
+                  Book online, pay online
+                </h4>
+                <img src="./img/tv.svg" alt="tv" />
+              </div>
+              <p class="book__card_wrap--text">
+                Complete the booking process A-Z, with our easy online system
+              </p>
+            </div>
+            <div class="book__card_wrap">
+              <div class="book__card_wrap--card">
+                <h4 class="book__card_wrap--card-title">
+                  Book online, pay online
+                </h4>
+                <img src="./img/tv.svg" alt="tv" />
+              </div>
+              <p class="book__card_wrap--text">
+                Complete the booking process A-Z, with our easy online system
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="car">
+        <div class="container">
+          <div class="wrapper">
+            <div class="car__wrap">
+              <h2 class="car__wrap_title">Car rental keeps you safe</h2>
+              <p class="car__wrap_text">
+                The safety of our employees and renters is our number one
+                priority. In addition to being confident your vehicle is cleaned
+                and sanitized every time you rent, you can also feel confident
+                that we will take every opportunity to enhance the health and
+                safety measures currently practiced in our operations.
+              </p>
+              <ul class="car__wrap_ul">
+                <li class="car__wrap_ul--list">
+                  <img
+                    src="./img/qora1.svg"
+                    alt="qw"
+                    class="car__wrap_ul--list-img"
+                  />
+                  <p class="car__wrap_ul--list-text">
+                    Every car is thoroughly sanitized and cleaned
+                  </p>
+                </li>
+                <li class="car__wrap_ul--list">
+                  <img
+                    src="./img/qora1.svg"
+                    alt="qw"
+                    class="car__wrap_ul--list-img"
+                  />
+                  <p class="car__wrap_ul--list-text">
+                    Every car is thoroughly sanitized and cleaned
+                  </p>
+                </li>
+                <li class="car__wrap_ul--list">
+                  <img
+                    src="./img/qora1.svg"
+                    alt="qw"
+                    class="car__wrap_ul--list-img"
+                  />
+                  <p class="car__wrap_ul--list-text">
+                    Every car is thoroughly sanitized and cleaned
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="car__div">
+              <div class="car__div_bg"></div>
+              <img src="./img/odam.png" alt="qwe" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container"></div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./utils.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

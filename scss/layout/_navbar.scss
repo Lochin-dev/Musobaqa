@@ -1,0 +1,260 @@
+.nav {
+  &_wrap {
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 94px;
+  align-items: center;
+
+  &__ul {
+    display: flex;
+    width: 40%;
+    list-style-type: none;
+    justify-content: space-between;
+
+    &--listt {
+      display: flex;
+      padding: 18px 10px;
+      width: 169px;
+      height: 58px;
+      background: #ffffff;
+      border-radius: 100px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      position: relative;
+      &:hover {
+        padding: 18px 10px;
+        width: 169px;
+        height: 58px;
+        background: #f5f5f5;
+        border-radius: 100px;
+      }
+      &:hover .drap {
+        display: block;
+      }
+    }
+
+    &--list {
+      padding: 18px 10px;
+      width: 147px;
+      height: 58px;
+      background: #ffffff;
+      border-radius: 100px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      position: relative;
+      &:hover {
+        padding: 18px 10px;
+        width: 147px;
+        height: 58px;
+        background: #f5f5f5;
+        border-radius: 100px;
+      }
+      &:hover .drap {
+        display: block;
+      }
+
+      &-link {
+        color: #000000;
+      }
+    }
+  }
+
+  &__link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+  }
+
+  &__dark {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+    width: 58px;
+    background: #f5f5f5;
+    border-radius: 100px;
+    border: #f5f5f5;
+    &:active {
+      background: #299764;
+    }
+    
+  }
+
+  &__login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 142px;
+    height: 58px;
+    background: #299764;
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+    border: none;
+
+    &:hover {
+      background: #077743;
+    }
+    &:active {
+      background: #f5f5f5;
+      color: #000000;
+    }
+    &:active .login_oq{
+      display: none;
+    }
+    &:active .login_qora{
+      display: block;
+    }
+  }
+  &__span {
+    display: none;
+  }
+
+  &__card {
+    display: none;
+    transform: translateY(-200%);
+    transition: all 0.4s;
+    &_ul {
+      padding: 0;
+      &--list {
+        padding: 52px 0px 0px 0px;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 34px;
+        &-link {
+          color: #000000;
+        }
+      }
+    }
+    z-index: 3;
+    position: absolute;
+    width: 475px;
+    background: #ffffff;
+    border: #000000 1px solid;
+    padding: 30px;
+    right: -20px;
+    top: 0px;
+    &_div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &--btn {
+        color: #0000009e;
+        padding: 18px;
+        width: 58px;
+        background: #f5f5f5;
+        border-radius: 100px;
+        border: none;
+        font-weight: 600;
+        &:hover {
+          color: #000000;
+        }
+        &:active {
+          color: #ffffff;
+          background: #299764;
+        }
+      }
+    }
+  }
+}
+
+.login_qora{
+  display: none;
+}
+
+.uls {
+  padding: 0;
+
+  &__list {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    padding-top: 16px;
+    &_link {
+      color: #555555;
+    }
+  }
+}
+
+.drap {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: -2px;
+  width: 147px;
+  height: 194px;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  text-align: start;
+  padding: 8px 16px;
+  z-index: 9999999999;
+  &__list {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    padding-top: 25px;
+   
+    &_link {
+      color: #000000;
+    }
+  }
+}
+
+.psicons {
+  padding-left: 5px;
+  font-size: 18px;
+  position: relative;
+}
+
+@media only screen and (max-width: 999px) {
+  .nav {
+    &__card{
+      display: block;
+    }
+    &__ul {
+      display: none;
+    }
+
+    &__link {
+      display: none;
+    }
+
+    &__dark {
+      display: none;
+    }
+
+    &__login {
+      display: none;
+    }
+    &__span {
+      display: block;
+      font-size: 44px;
+    }
+  }
+  .dis{
+    display: block;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .nav__card{
+    width: 350px;
+  }
+}

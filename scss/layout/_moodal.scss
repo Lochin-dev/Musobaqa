@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.modal {
+  width: 100% !important;
+  height: 100% !important;
+  position: fixed;
+  top: 0;
+  z-index: 1212;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s;
+  transform: translateY(-200%);
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .container {
+    max-width: 576px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 0 5px;
+  }
+}
+
+.reg_wrapper {
+  position: relative;
+  text-align: center;
+  width: 590px;
+  height: 483px;
+  background: #ffffff;
+  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+@media only screen and (max-width: 850px) {
+  .reg_wrapper {
+    max-width: 75%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .reg_wrapper {
+    max-width: 75%;
+  }
+}
+
+.input {
+  margin-top: 16px;
+  width: 100%;
+  height: 58px;
+  background: #ffffff;
+  border: 1.5px solid #e5e7ea;
+  border-radius: 82px;
+  position: relative;
+  padding: 0 30px;
+}
+
+.regs_text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  padding: 30px;
+}
+
+#login_x {
+  position: absolute;
+  right: 25px;
+}
+
+.label_koz {
+  position: relative;
+}
+.koz {
+  position: absolute;
+  top: 0;
+  right: 17px;
+}
+
+.reg_btm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 18px 30px;
+  width: 100%;
+  height: 58px;
+  background: #299764;
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  border: none;
+}
+
+.overlay {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background: #0000004d;
+  top: 0;
+}

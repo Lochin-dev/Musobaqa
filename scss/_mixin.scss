@@ -1,0 +1,8 @@
+@mixin costum-menu($d, $ai, $js, $w, $h, $bc) {
+    display: $d;
+    align-items: $ai;
+    justify-content: $js;
+    width: $w;
+    height: $h;
+    background-color: $bc;
+}

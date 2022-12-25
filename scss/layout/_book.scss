@@ -1,0 +1,67 @@
+.book {
+  text-align: center;
+  padding-top: 150px;
+  &__title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  &__text {
+    max-width: 684px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #555555;
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+
+  &__card {
+    max-width: 1200px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content:space-between;
+    padding: 10px 0;
+ 
+    &_wrap {
+      padding: 40px;
+      width: 590px;
+      height: 216px;
+      background: #f5f5f5;
+      border-radius: 20px;
+      margin: 10px auto;
+      &--card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-title {
+          width: 211px;
+          height: 78px;
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 39px;
+          color: #000000;
+          text-align: start;
+        }
+      }
+      &--text {
+        padding-top: 15px;
+        max-width: 354px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #555555;
+        text-align: start;
+      }
+    }
+  }
+}

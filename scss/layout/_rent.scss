@@ -1,0 +1,311 @@
+.carRENT {
+  width: 100%;
+
+  .rent {
+    &-title {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 44px;
+      text-align: center;
+      color: #000000;
+      margin-bottom: 10px;
+    }
+
+    &-text {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: #555555;
+      max-width: 575px;
+      margin: 0 auto;
+    }
+
+    &__btns {
+      @include costum-menu(flex, center, space-between, auto, auto, white);
+      max-width: 476px;
+      margin: 40px auto 24px;
+
+      &-btn {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #000000;
+        background: #ffffff;
+        border: 1.5px solid #e5e7ea;
+        padding: 19px 40px;
+        border-radius: 100px;
+
+        &:hover {
+          background: #f5f5f5;
+          border: 1.5px solid #f5f5f5;
+        }
+
+        &:active {
+          background: #299764;
+          color: #ffffff;
+        }
+      }
+    }
+
+    &__lists {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 0;
+
+      &--item {
+        background: #f5f5f5;
+        border-radius: 16px;
+        padding: 30px 24px;
+        max-width: 387px;
+        color: #000000;
+        margin: 0px auto 20px;
+
+        &:hover {
+          background: #299764;
+          color: #ffffff;
+        }
+
+        &-title {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 29px;
+          margin-bottom: 8px;
+
+          &:hover {
+            color: #ffffff;
+          }
+        }
+
+        &-text {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 20px;
+          color: #555555;
+        }
+
+        &--iconsUP {
+          @include costum-menu(
+            flex,
+            center,
+            space-between,
+            auto,
+            auto,
+            transparent
+          );
+          max-width: 270px;
+
+          &--pack {
+            display: flex;
+
+            &-text {
+              margin-left: 15px;
+            }
+          }
+        }
+      }
+    }
+
+    &__down {
+      display: flex;
+      margin: 0 auto;
+      &-btn {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: #000000;
+        background: #ffffff;
+        border: 1.5px solid #e5e7ea;
+        padding: 18px 40px;
+        border-radius: 100px;
+        margin: 0 auto;
+  
+        &:hover {
+          background: #f5f5f5;
+          border: 1.5px solid #f5f5f5;
+        }
+  
+        &:active {
+          background: #299764;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:576px) {
+
+  .carRENT {
+    width: 100%;
+  
+    .rent {
+      &-title {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 6px;
+        width: 232px;
+        margin: 0 auto;
+      }
+  
+      &-text {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        color: #555555;
+        max-width: 321px;
+        margin: 0 auto;
+      }
+  
+      &__btns {
+        @include costum-menu(flex, center, space-between, auto, auto, white);
+        max-width: 328px;
+        margin: 30px auto 16px;
+  
+        &-btn {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+          text-align: center;
+          color: #000000;
+          background: #ffffff;
+          border: 1.5px solid #e5e7ea;
+          padding: 14px 20px;
+          border-radius: 100px;
+  
+          &:hover {
+            background: #f5f5f5;
+            border: 1.5px solid #f5f5f5;
+          }
+  
+          &:active {
+            background: #299764;
+            color: #ffffff;
+          }
+        }
+      }
+  
+      &__lists {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0;
+  
+        &--item {
+          background: #f5f5f5;
+          border-radius: 16px;
+          padding: 30px 24px;
+          max-width: 358px;
+          color: #000000;
+          margin: 0px auto 20px;
+  
+          &:hover {
+            background: #299764;
+            color: #ffffff;
+          }
+  
+          &-title {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 14px;
+            margin-bottom: 8px;
+  
+            &:hover {
+              color: #ffffff;
+            }
+          }
+  
+          &-text {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: #555555;
+          }
+  
+          &--iconsUP {
+            @include costum-menu(
+              flex,
+              center,
+              space-between,
+              auto,
+              auto,
+              transparent
+            );
+            max-width: 270px;
+  
+            &--pack {
+              display: flex;
+  
+              &-text {
+                margin-left: 15px;
+              }
+            }
+          }
+        }
+      }
+  
+      &__down {
+        display: flex;
+        margin: 0 auto;
+        &-btn {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 22px;
+          text-align: center;
+          color: #000000;
+          background: #ffffff;
+          border: 1.5px solid #e5e7ea;
+          padding: 18px 30px;
+          border-radius: 100px;
+          margin: 0 auto;
+    
+          &:hover {
+            background: #f5f5f5;
+            border: 1.5px solid #f5f5f5;
+          }
+    
+          &:active {
+            background: #299764;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+
+}
